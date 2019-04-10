@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件2</title>
+		<script>
+			
+//			document.onclick=function(e){
+//				//console.log(e.clientX+","+e.clientY);
+//				var ob=e||event;
+//				console.log(ob.clientX+","+ob.clientY);
+//			}
+			
+			//兼容性问题  鼠标坐标系
+			//事件冒泡 div<body<html<document 事件流 
+			//阻止冒泡 非IE下 event.stopPropagation
+			//IE下 event.cancelBubbIe=true;
+			//默认行为  右击弹出的东西
+			document.oncontextmenu=function(e){
+				var  en=e||event;
+				
+				var  on=document.getElementById("mob");
+				on.style.display="block";
+				 var  X=en.clientX;
+				 var  Y=en.clientY;
+				 on.style.left=X+"px";
+				 on.style.top=Y+"px";
+				 return false;//默认右键关闭
+			}
+			//鼠标点击事件不触发
+			document.onclick=function(){on.style.display="none";}
+			//阻止默认行为的方法
+//			document.oncontextmenu=function(){
+//				return false;
+//			}
+		</script>
+	</head>
+	<body>
+		<ul id="mob">
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+		</ul>
+		<!--
+			事件冒泡 事件流  阻止默认   做拖拽案例
+			
+			event对象   用来获取事物的详细信息 ：鼠标位置 键盘位置
+			eevent获取对象  获取鼠标坐标系  文档流  根节点 HTML 自动触发
+			
+		-->
+		
+	</body>
+</html>

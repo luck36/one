@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p class="p1"></p>
+		<button onclick="stop()">停止</button>
+	</body>
+	<script>
+		var p1=document.getElementsByClassName("p1")[0];
+		
+		function NOW(){
+			//获取当前时间
+			var d1=new Date();
+			
+			var year=d1.getFullYear();
+			var month=d1.getMonth()+1;
+			var dat=d1.getDay();
+			
+			var hour=d1.getHours();
+			var minus=d1.getMinutes();
+			var tim=d1.getSeconds();
+			
+			p1.innerHTML=year+"年"+month+"月"+dat+"日"+hour+"时"+minus+"分"+tim+"秒";
+			
+		}
+		var t;
+		function int(){
+			t=setInterval(NOW,1000);
+		}
+		int();
+		
+		function stop(){
+			clearInterval(t);
+		}
+	</script>
+</html>

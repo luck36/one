@@ -1,0 +1,16 @@
+*{margin: 0px ;padding: 0px;}
+a{text-decoration: none;}
+
+.main-one{width: 100%;height:40px;background: #d8d8d8;color: #b7b7b7 ;font-size: 16px;line-height: 40px;}
+
+.main-two{width: 100%;height: 885px;background: #f4f4f4;}
+.main-two .main-two0{width: 100%;margin-top: 12px;height: 820px;display: flex;justify-content: space-around;}
+.main-two  .main-two0 .main-two1{width: 141px; height:439px;border:1px solid #d8d8d8;box-shadow:#d8d8d8 5px 5px  25px 5px;border-radius: 10%;}
+.main-two  .main-two0 .main-two1 li{width: 100%;height: 48px;line-height:48px;border-bottom: 1px dashed #d8d8d8;text-align: center;color: #a3a3a3; font-size: 14px;list-style: none;}
+.main-two  .main-two0 .main-two1 li:hover{color: black;cursor: pointer;}
+.main-two  .main-two2{height: 820px;width: 1017px;margin-left: 35px;}
+.main-two  .main-two2 .main-two2-1{width: 1017px;border-radius: 3%;border:1px solid #d8d8d8;display: flex;justify-content: space-between;margin-top: 9px;}
+.main-two  .main-two2 .main-two2-1 li{list-style: none;height: 258px;width: 306px;margin: 0px auto;}
+.p1{font-size: 14px;color: #bdbdbd;  }
+.main-two  .main-two2 .main-two2-2{width: 220px;height: 39px;display: block;justify-content: space-between;margin-left: 800px;margin-top: 9px;cursor: pointer;}
+.main-two  .main-two2 .main-two2-2 li{width: 104px;height: 39px;border: 1px solid #d8d8d8;color: #d8d8d8;font-size: 22px;list-style: none;text-align: center;display: inline-block;}

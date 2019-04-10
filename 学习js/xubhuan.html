@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>循环</title>
+		<script>
+			//while循环
+			var index=1;
+			while(index<=10){
+				document.write("<br/>第"+index+"次打印");
+				index++;
+			}
+			//for循环
+			for(var a=1;a<=10;a++){
+				document.write("<br/>第"+a+"次打印");
+			}
+			//组合
+			var arr=["622","全体人员","是最美的","小可爱"];
+			for(var srr in arr){
+				document.write(arr[srr]);
+			}
+			for(var int=0;int<arr.length;int++){
+				document.write(arr[int]);
+			}
+			//for  if
+			var num=0;
+			for(var na=1;na<=50;na++){
+				if(na%2==0){
+					num+=na;
+				}
+			}
+			document.write("<br/>100以内偶数之和"+num);
+			
+			document.write("<br />倒三角形");
+				var ss=61;
+				while(ss>=0){
+					document.write("<hr width="+ss+"% />")
+					ss=ss-11;
+			}
+			document.write("<br />正三角形");
+//				var s=1;
+				for(var s=1;s<=61;s+=11){
+					document.write("<hr width="+s+"% />")
+				}
+				var s1=1;
+				while(s1<=61){
+					document.write("<hr width="+s1+"% />");
+					s1=s1+11;
+				}
+				for(var i=1;i<10;i++){
+					for(var j=1;j<10;j++){
+						document.write(i+"*"+j+"="+i*j+"&nbsp;&nbsp;");
+						if(j==i){
+							document.write("<br />");
+							break;
+						}
+					}
+				}
+//				var k="";
+//				for(var i=1;i<=9;i++){
+//					for(var j=1;j<=i;j++){
+//						k+=i+"*"+j+"="+i*j+"&nbsp;";
+//					}
+//					k+="<br />";
+//				}
+//				document.write(k);
+		</script>	
+	</head>
+	<body>
+	</body>
+</html>

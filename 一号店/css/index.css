@@ -1,0 +1,155 @@
+*{margin: 0px;padding: 0px;}
+.box{widows: 100%;}
+.wrap{width:1200px;margin: 0px auto;position: relative;}
+ul li{list-style: none;float: left;}
+a{text-decoration: none;}
+a:hover{color: crimson;}
+/*第一层*/
+.header{width: 100%;height: 30px;background-color:#AAAAAA;text-align: center;}
+.header p{float: left;line-height: 30px;}
+.header ul{float: right;line-height: 30px;}
+select{background-color: #AAAAAA;}
+.header a{color: black;font-size: 12px;}
+.header a:hover{color: crimson;}
+.header li{margin-left: 20px;font-size: 12px;}
+.header li img{width: 25px;height: 25px;margin-left: 5px;}
+/*第二层*/
+.box-two{width: 100%;height: 150px;}
+.box-two-left {width: 220px;}
+.box-two-left img{margin-top: 40px;}
+.box-two-main{width: 600px;height: 150px;line-height: 150px;margin: auto;position: absolute;left: 320px;top: 0px;}
+.box-two-main input[type="text"]{width: 500px;height: 30px;border: 3px solid red;margin-left: 5px;}
+.box-two-main input[type="button"]{width: 80px;height: 36px;background-color: red;border: 1px solid red;}
+.box-two-main ul{position: absolute;top: 30px;}
+.box-two-main li{margin-left: 20px;}
+.box-two-main li a{color: black;font-size: 13px;}
+.box-two-main li a:hover{color: red;}
+.box-two-right{width: 220px;height: 150px;position: absolute;top: 0px;left: 980px;}
+.box-two-right input[type="button"]{width: 100px;height: 35px;background-image:url(../images/car.png) ;background-repeat: no-repeat;
+background-position: left;background-color:gainsboro;color: darkgray;position: absolute;top: 55px;left: 65px;}
+/*第三层*/
+.box-three{width: 100%;height: 40px;position: relative;top: 20px;}
+.box-three-left{width: 220px; height: 40px;line-height: 40px;text-align: center;background-color: red;}
+.box-three-main{width: 780px;line-height: 40px;font-size: 14px;font-weight: 500;position: absolute;top: 0px;left: 220px;}
+.box-three-main li{margin-left: 20px;}
+.box-three-right{width: 115px;height: 20px;position: absolute;top: 13px;left: 1075px;}
+/*第四层*/
+.box-four{width: 100%;height: 594px;position: relative;top: 18px;border: 1px solid black;border-top: 2px solid red;}
+.box-four-left{width: 220px;height: 594px ;position: absolute;background-color: firebrick;}
+.box-four-left-fu{width: 180px;height: 59px;line-height: 59px;font-size: 15px;color: black;}
+.box-four-left-fu:hover{background-color: red;}
+.box-four-left li img{width: 20px;height: 20px;}
+.box-four-left-fuhao {color: gray;width: 20px;position: relative;top:15px;left:25px;cursor: pointer;}
+.box-four-left-fuhao:hover{background-color: red;}
+.box-four-main{width: 760px;height: 594px;position: absolute;left: 220px;}
+.box-four-main .box-four-main-img{width: 760px;height: 594px;}
+.box-four-main-dayu{cursor: pointer;position: absolute;top: 252px;}
+.box-four-main-xiaoyu{cursor: pointer;position: absolute;top: 252px;right: 0px;}
+.box-four-main-math  ul{position: absolute;bottom: 20px;right: 110px;}
+.box-four-main-math li{width: 20px;height: 20px;border-radius: 50%;background-color: gainsboro;color: black;margin-left: 5px;cursor: pointer;text-align: center;}
+.box-four-main-math li:hover{background-color: crimson;}
+.box-four-right{width: 200px;height:594px ;position: absolute;top: 0px;left: 1000px;border: 1px solid gainsboro;}
+.box-four-right-a{width: 200px;height: 50px;line-height: 50px; border-bottom: 1px solid gainsboro;}
+.box-four-right-a h4{margin-right: 140px;color: black;}
+.box-four-right-a a{position: absolute;right: 0px;color: black;}
+.box-four-right-b {width: 200px;height: 230px;border-bottom: 1px solid gainsboro;}
+.box-four-right-b a{color: black;font-size: 10px;}
+.box-four-right-b a:hover{text-decoration: underline;}
+.box-four-right-b li{font-size: 15px;padding-top: 20px;}
+.box-four-right-c{width: 200px;height: 60px;line-height:60px;font-size:15px;font-weight:300;border-top: 1px solid gainsboro;}
+.box-four-right-d {width: 200px;height: 230px;border-top: 1px solid gainsboro;}
+.box-four-right-d p{margin-top: 30px;}
+.box-four-right-d img{width:200px;height: 200px;}
+/*第五层*/
+.box-five{width: 100%;height: 240px;position: relative;top: 20px;}
+.box-five-left{width: 210px;height: 240px;position: absolute;}
+.box-five-left ul{width: 188px;height:50px;background-color:aliceblue;}
+.box-five-left li{margin-left: 30px;}
+.box-five-left img:hover{box-shadow: #808080 3px 3px 3px 3px;}
+.box-five-right{width: 990px;height: 240px;position: absolute;left: 220px;}
+.box-five-right .img{width:243px;height: 240px;border:1px solid gainsboro;float: left;border: 1px solid gainsbor;}
+.box-five-right .img .box-five-right-photo{width: 195px;height: 200px;position: absolute;top: 10px;}
+.box-five-right-re{position: absolute;top: 5px;cursor: pointer;}
+.box-five-right-photo:hover{box-shadow: #808080 5px 5px 5px 5px;}
+.dayu{position: absolute;width: 20px;height: 30px;position: absolute;left: 0px;top: 100px;cursor: pointer;}
+.xiaoyu{position: absolute;width: 20px;height: 30px;position: absolute;top:100px;right: 10px;cursor: pointer;}
+.box-five-right .img .zi{position: absolute;bottom: 0px;text-align: center;}
+.box-five-right .img .zi p{font-size: 12px;color: gainsboro;text-align: center;}
+.box-five-right .img .zi li{margin-left: 30px;}
+/*第六层*/
+.box-six{width: 100px;height: 200px;position: relative;}
+.box-six img{width: 1200px;height: 110px;margin-top: 30px;}
+/*第七层*/
+.box-selevn{width: 100%;position: relative;}
+.box-selevn-top{width: 100%;height: 30px;line-height: 30px;}
+.box-selevn-top-left li{width:40px;color: red;margin-left: 20px;}
+.box-selevn-top-right li{width: 80px;float: right;}
+.box-selevn-bottom{width: 100%;height: 435px;border-top:2px solid red;}
+.box-selevn-bottom-left{width: 211px;position: absolute;}
+.box-selevn-bottom-left-a{width: 211px;height:155px;background-color:aliceblue ;margin-top: -5px;}
+.box-selevn-bottom-left-a .b{width: 211px;height: 30px;line-height:30px;border-bottom: 1px solid  gainsboro;}
+.box-selevn-bottom-left-a .b li{margin-left: 20px;}
+.box-selevn-bottom-left .xiaoyu{position: absolute;width: 20px;height: 30px;position: absolute;top:100px;right: 0px;cursor: pointer;}
+.box-selevn-bottom-main{width: 705px;height: 435px;position: absolute;left: 233px;}
+.box-selevn-bottom-main-img{width:230px;height:210px;float: left;}
+.box-selevn-bottom-main-img img{height: 145px;margin-left: 35px;float: left;cursor: pointer;}
+.box-selevn-bottom-main .zi{margin-top: 20px;text-align: center;}
+.box-selevn-bottom-right{position: absolute;left: 943px;}
+.box-selevn img:hover{box-shadow: #808080 3px 3px 3px 3px;}
+/*第八层*/
+.box-eight{width: 100%;position: relative;top: 20px;}
+.box-eight-top{width: 100%;height: 30px;line-height: 30px;}
+.box-eight-top-left li{width:80px;color: red;margin-left: 20px;}
+.box-eight-top-right li{width: 80px;float: right;}
+.box-eight-bottom{width: 100%;height: 435px;border-top:2px solid red;}
+.box-eight-bottom-left{width: 211px;position: absolute;}
+.box-eight-bottom-left .img{width: 211px;height: 286px;}
+.box-eight-bottom-left .xiaoyu{position: absolute;width: 20px;height: 30px;position: absolute;top:100px;right: 0px;cursor: pointer;}
+.box-eight-bottom-left-a{width: 203px;height:155px;background-color:darksalmon ;margin-top: -5px;}
+.box-eight-bottom-left-a .b{width: 203px;height: 30px;line-height:30px;border-bottom: 1px dashed  gainsboro;}
+.box-eight-bottom-left-a .b li{margin-left: 20px;}
+.box-eight-bottom-main{width: 705px;height: 435px;position: absolute;left: 233px;}
+.box-eight-bottom-main-img{width:230px;height:230px;float: left;}
+.box-eight-bottom-main-img img{height: 165px;margin-left: 35px;float: left;cursor: pointer;}
+.box-eight-bottom-main .zi{margin-top: 30px;text-align: center;}
+.box-eight-bottom-right{position: absolute;left: 943px;}
+.box-eight img:hover{box-shadow: #808080 3px 3px 3px 3px;}
+/*第九层*/
+.box-nine{width: 100px;height: 200px;position: relative;top: 20px;}
+.box-nine img{width: 1200px;height: 110px;margin-top: 30px;}
+/*第十层*/
+.box-ten{width: 100%;position: relative;top: 20px;}
+.box-ten-top{width: 100%;height: 30px;line-height: 30px;}
+.box-ten-top-left li{width:80px;color: red;margin-left: 20px;}
+.box-ten-top-right li{width: 80px;float: right;}
+.box-ten-bottom{width: 100%;height: 435px;border-top:2px solid red;}
+.box-ten-bottom-left{width: 211px;position: absolute;}
+.box-ten-bottom-left .img{width: 211px;height: 286px;}
+.box-ten-bottom-left .xiaoyu{position: absolute;width: 20px;height: 30px;position: absolute;top:100px;right: 0px;cursor: pointer;}
+.box-ten-bottom-left-a{width: 211px;height:155px;background-color:pink;margin-top: -5px;}
+.box-ten-bottom-left-a .b{width: 203px;height: 30px;line-height:30px;border-bottom: 1px dashed  gainsboro;}
+.box-ten-bottom-left-a .b li{margin-left: 20px;}
+.box-ten-bottom-main{width: 705px;height: 435px;position: absolute;left: 233px;}
+.box-ten-bottom-main-img{width:230px;height:220px;float: left;}
+.box-ten-bottom-main-img img{height: 165px;margin-left: 35px;float: left;cursor: pointer;}
+.box-ten-bottom-main .zi{margin-top: 20px;text-align: center;}
+.box-ten-bottom-right{position: absolute;left: 943px;}
+.box-ten img:hover{box-shadow: #808080 3px 3px 3px 3px;}
+/*底层*/
+.box-eleven{width: 100%;position: relative;top: 60px;}
+.box-eleven-top{cursor :pointer;width: 100%;text-align: center;margin-left: 170px;position: absolute;}
+.box-eleven-top-a{width: 200px;height: 100px;float: left;}
+.box-eleven-zhong{width: 100%;height: 200px;position: absolute;top: 150px;border-bottom: 1px solid #A9A9A9;}
+.box-eleven-zhong-left-a{width: 100px;float: left;margin-left: 50px;}
+.box-eleven-zhong-left-a li{margin-left: 20px;}
+.box-eleven-zhong-left-a a{color: lightgray;font-size: 12px;}
+.box-eleven-zhong-left-a a:hover{text-decoration: underline;}
+
+.box-eleven-zhong-right{width: 300px;height: 170px;position: absolute;right: 90px;}
+.box-eleven-zhong-right .ew{width: 150px;height: 170px;}
+.box-eleven-zhong-right .y{width: 150px;height:170px;position: absolute;left: 150px;top: 0px;}
+.box-eleven-zhong-right .y li{margin-top: 10px;}
+.box-eleven-bottom{height:130px;position: absolute;top: 400px;left:100px;}
+.box-eleven-bottom p{font-size: 12px;color: lightgray;}
+.box-eleven-bottom-photo {margin-top: 20px;margin-left: 50px;}
+.box-eleven-bottom-photo img{margin-left: 20px;}

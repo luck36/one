@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var str=new String("Hello");
+			document.write("<br />:"+str.length);
+			document.write("<br />拼接:"+str.concat("word"));
+			document.write("<br />通过下标返回相应的字符:"+str.charAt(4));
+			document.write("<br />替换:"+str.replace("H","h"));
+			//分割
+			var ss="my name is sangpang";
+			document.write("<br />将字符串分割为数组:"+ss.split("  , "));
+			document.write("<br />通过字符判断第一次出来的位置"+ss.indexOf("n"));
+			document.write("<br />通过字符判断最后次出来的位置"+ss.lastIndexOf("n"));
+			document.write("<br />通过字符判断字符串中是否有该值"+ss.match("s"));
+			document.write("<br />转大写"+ss.toUpperCase());
+			document.write("<br />转小写"+ss.toLocaleLowerCase());
+			document.write("<br />截取字符串1"+ss.slice(0,4));
+			document.write("<br />截取字符串2"+ss.substring(0,3));
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

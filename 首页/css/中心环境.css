@@ -1,0 +1,29 @@
+
+.main-one{width: 100%;height: 604px;background-image: url(../images/2photo_01.png);background-size: 100% 100%;background-repeat: no-repeat;}
+.main-one-1{width: 100%;height: 59px;background-image: url(../img/four_02.png);opacity: 0.8;background-size: 100% 100%;background-repeat: no-repeat;}
+.main-one-1 ul{display: flex;justify-content: space-around;}
+.main-one-1 ul li{list-style: none;}
+.main-one-1 ul li a{color: #56a9e3;font-size: 14px;line-height: 59px;}
+.main-one-1 ul li a:hover{color: black;}
+
+.main-one-2{width: 100%;height: 13px;background-image: url(../img/four_04.png);background-size: 100% 100%;background-repeat: no-repeat;margin-top: 532px;}
+
+
+.main-two{width: 100%;height: 1043px;}
+.main-two1{width: 998px;height: 965px;border: 1px solid #cbcbcb;position:absolute;right:0px;background: #f9f9f9;}
+
+.main-two1-1{width: 998px;height: 66px;display: flex;justify-content: space-between;}
+.main-two1-1-left{width: 150px;height: 66px;display: flex;justify-content: space-around;margin-left: 15px;}
+.a2{color:#149add;font-size:17.72px;margin-top: 10px;}
+.a3{color:#b6b6b6;font-size:12px;}
+.main-two1-1-right{color: #7c7b7b;font-size: 12px;margin-right: 28px;line-height: 66px;}
+
+.main-two1-2{width: 998px;height: 782px;}
+.main-two1-2-1{width: 222px;height: 235px;display: inline-block;margin-top: 27px;margin-left: 20px;}
+.main-two1-2-1 img{width: 222px;height: 190px;}
+.a4{width: 222px;height: 45px;line-height: 45px;background: #e5e5e5;margin-top: -5px;text-align: center;color: #878787;font-size: 13px;}
+
+
+.main-two1-3{width: 164px;height: 33px;line-height: 33px;display: flex;justify-content: space-between;margin: 0px auto;margin-top: 36px;}
+
+.main-two1-3 li{list-style: none;border: 1px solid #dedede;color: #E0E0E0;font-size: 12px;text-align: center;}

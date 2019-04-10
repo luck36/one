@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			td,
+			th {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p> 姓名:<input type="text" placeholder="请输入姓名"></p>
+		<p> 年龄:<input type="text" placeholder="请输入年龄"></p>
+		<input type="button" value="添加" onclick="add()" />
+
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>是否删除</th>
+			</tr>
+		</table>
+	</body>
+	<script>
+		var inp1 = document.getElementsByTagName("input")[0];
+		var inp2 = document.getElementsByTagName("input")[1];
+
+		function add() {
+			var tab = document.getElementsByTagName("table")[0];
+			var tr1 = document.createElement("tr");
+			var td1 = document.createElement("td");
+			var td2 = document.createElement("td");
+			var td3 = document.createElement("td");
+			tab.appendChild(tr1);
+			tr1.appendChild(td1);
+			td1.innerHTML = inp1.value;
+			inp1.value = "";
+			tr1.appendChild(td2);
+			td2.innerHTML = inp2.value;
+			inp2.value = "";
+
+			tr1.appendChild(td3);
+			var but = document.createElement("input");
+			but.type = "button";
+			but.value = "删除";
+			td3.appendChild(but);
+
+			but.onclick = function() {
+				tab.removeChild(this.parentNode.parentNode);
+			}
+
+		}
+	</script>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>dom操作</title>
+		<script>
+			//体验dom操作
+			window.open("dom.html","图标","width=400,height=500,top=300,left=400");
+			
+			
+			function change(){
+				document.getElementById("node1").href="index.html";
+				document.getElementById("node1").innerHTML="dom2";
+				document.write(typeof('hhs'));//使用typeof测试数据的类型
+			}
+		</script>
+	</head>
+	<body>
+		<img src="img/logo.png" width="600px" height="600px" />
+		
+		<a href="dom.html" id="node1">dom</a>
+		<input type="button" value="点我换网址" onclick="change()"/>
+		<input type="button" value="点我出弹框" onclick="javascript:alert('呵呵哒')"/>
+	</body>
+</html>

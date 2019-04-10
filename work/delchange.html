@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>删除和替换</title>
+		<link rel="stylesheet" href="css/dom.css" />
+		<script>
+			function del(){
+				//获取删除的节点id
+				var ff=document.getElementById("first");
+				ff.parentNode.removeChild(ff);
+			}
+			function rep(){
+				var f=document.getElementById("second");
+				var img1=document.createElement("img");
+				img1.setAttribute("src","img/newBook03.jpg");
+				
+				f.parentNode.replaceChild(img1,f);
+			}
+		</script>
+	</head>
+	<body>
+		<ul>
+			  <li>
+			     <img src="img/newBook01.jpg" id="first"/>
+			     <p>
+			       <input type="button" value="删除我吧" onClick="del();"/>
+			     </p>
+			  </li>
+			  <li>
+			     <img src="img/newBook02.jpg" id="second"/>
+			     <p>
+			       <input type="button" value="换换我吧" onClick="rep();"/>
+			     
+			     </p>
+			  
+			  </li>
+		
+		</ul>
+	</body>
+</html>

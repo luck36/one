@@ -1,0 +1,40 @@
+*{margin: 0px ;padding: 0px;}
+a{text-decoration: none;}
+
+.main-one{width: 100%;height:40px;background: #d8d8d8;color: #b7b7b7 ;font-size: 16px;line-height: 40px;}
+
+
+.main-two{width: 100%;height: 715px;}
+.main-two img{width: 100%;height: 715px;}
+
+.main-two .rediu{width:70px;display: flex;justify-content: space-between;margin: 0px auto;margin-top: -30px;}
+.main-two .rediu li{width: 10px;height: 10px;border-radius:50%;background: #aaa9aa;list-style: none;}
+.main-two .rediu li:hover{background: #e6e5e5;cursor: pointer;}
+
+
+.main-three{width: 100%;height:88px ;background: #efefef;}
+.main-three ul{display: flex;justify-content: space-between;}
+.main-three ul li{list-style: none;margin-top: 16px;}
+.main-three ul .main-three1{width:585px ;text-align: center;border-right: 1px solid #d3d3d3;}
+.main-three ul .main-three1 .p1{color: #9a9a9a;font-size: 20px;}
+.main-three ul .main-three1 .p2{color: #d3d3d3;font-size: 14px;}
+.main-three ul .main-three2{width:585px ;text-align: center;}
+.main-three ul .main-three2 .p1{color: #9a9a9a;font-size: 20px;}
+.main-three ul .main-three2 .p2{color: #d3d3d3;font-size: 14px;}
+
+
+.main-four{width: 100%;height:949px;}
+.main-four .main-four0{width: 100%;height: 785px ;margin-top: 29px;}
+.main-four .main-four1{width: 377px;height: 374px;margin-left: 14px;display: inline-block}
+.main-four .main-four1 img{width: 377px;height: 204px;}
+.main-four .main-four1 .date{color: #9a9a9a;font-size: 14px;text-decoration:overline;margin-top: 23px;margin-left: 26px;}
+.main-four .main-four1 .p3{color: #c6c6c6;font-size: 18px;margin-left: 26px;}
+.main-four .main-four1 .p4{color: #e0e0e0;font-size: 14px;margin-left: 26px;}
+.main-four .main-four2{width: 377px;height: 374px;margin-left: 14px;display: inline-block;margin-top: 30px;}
+.main-four .main-four2 img{width: 377px;height: 204px;}
+.main-four .main-four2 .date{color: #9a9a9a;font-size: 14px;text-decoration: underline;margin-top: 23px;margin-left: 26px;}
+.main-four .main-four2 .p3{color: #c6c6c6;font-size: 18px;margin-left: 26px;}
+.main-four .main-four2 .p4{color: #e0e0e0;font-size: 14px;margin-left: 26px;}
+
+.main-four .main-four3{width: 220px;height: 39px;display: block;justify-content: space-between;margin: 0px auto;margin-top: 23px;cursor: pointer;}
+.main-four .main-four3 li{width: 104px;height: 39px;border: 1px solid #d8d8d8;color: #d8d8d8;font-size: 22px;list-style: none;text-align: center;display: inline-block;}

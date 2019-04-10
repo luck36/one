@@ -1,0 +1,16 @@
+.main-five{width: 100%;height: 400px;background-image: url(../img/two_17.png);background-repeat: no-repeat;}
+.main-five1{display: flex;justify-content: space-between;width: 500px;line-height: 48px;height: 48px;margin-left: 400px;}
+.main-five1 li{list-style: none;color:#0168b7 ;font-size: 14px;}
+.main-five1  li a{color:#0168b7 ;font-size: 14px;}
+
+.main-five2{width: 100%;height: 239px;margin-top: 63px;display: flex;justify-content: space-between;}
+.main-five2-1{width:250px;height: 239px;}
+.main-five2-1-1 {display: flex;justify-content: space-between;}
+ .p1{font-size: 16px; color: #FFFFFF;}
+.main-five2-1 .p0{width: 100px ;margin-top:20px;margin-right: 60px;margin-top: 20px;}
+.main-five2-1 .p2{font-size: 14px; color: #FFFFFF;}
+.main-five2-1 .p3{font-size: 12px; color: #FFFFFF;}
+.p4{color: #FFFFFF;font-size: 12px;margin-top: 20px;}
+.p5{color: #FFFFFF;font-size: 12px;}
+.p6 img{margin-left: 10px;margin-top: 20px;}
+.main-five .img1{margin-top: -200px;margin-left: 1400px;}

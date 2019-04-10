@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+	</head>
+	<body>
+		<!--购物车 单价  数量  总价-->
+		
+		单价:<p class="danjia1" style="display: inline;">20</p>
+		<input type="button" value="+"  onclick="jia1()"/>
+		数量:<input type="text" value="1" / >
+		<input type="button" value="-" onclick="jian1()"/>
+		价钱:<p class="jiaqian1"  style="display: inline;">20</p>
+		
+		<br />
+		单价:<p class="danjia1" style="display: inline;">30</p>
+		<input type="button" value="+"  onclick="jia2()"/>
+		数量:<input type="text" value="1" / >
+		<input type="button" value="-" onclick="jian2()"/>
+		价钱:<p class="jiaqian1"  style="display: inline;">30</p>
+		
+		<br />
+		
+		总价: <p class="zongjia"  style="display: inline;" >50</p>
+	</body>
+	<script>
+		//获取元素
+		var  zongjia=document.getElementsByClassName("zongjia")[0];
+		
+		var tes1=document.getElementsByTagName("input")[1];
+		var danjia1=document.getElementsByClassName("danjia1")[0];
+		var jiaqian1=document.getElementsByClassName("jiaqian1")[0];
+		
+		var tes2=document.getElementsByTagName("input")[4];
+		var danjia2=document.getElementsByClassName("danjia1")[1];
+		var jiaqian2=document.getElementsByClassName("jiaqian1")[1];
+		function  jia1(){
+			//数量加
+			tes1.value=Number(tes1.value)+1;
+			jiaqian1.innerHTML=danjia1.innerHTML*tes1.value;
+			zonghe();
+		}
+		function  jian1(){
+			//数量加
+			tes1.value=Number(tes1.value)-1;
+			if(tes1.value>0){
+				jiaqian1.innerHTML=danjia1.innerHTML*tes1.value;
+			}else{
+				
+				tes1.value="1";
+			}
+			zonghe();
+		}
+			function  jia2(){
+			//数量加
+			tes2.value=Number(tes2.value)+1;
+			jiaqian2.innerHTML=danjia2.innerHTML*tes2.value;
+			zonghe();
+		}
+		function  jian2(){
+			//数量加
+			
+			tes2.value=Number(tes2.value)-1;
+			if(tes2.value>0){
+				jiaqian2.innerHTML=danjia2.innerHTML*tes2.value;
+			}else{
+				
+				tes2.value="1";
+			}
+			zonghe();
+		}	
+		function zonghe(){
+			zongjia.innerHTML=Number(jiaqian2.innerHTML)+Number(jiaqian1.innerHTML);
+		
+		}
+	</script>
+</html>

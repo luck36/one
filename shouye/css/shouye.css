@@ -1,0 +1,54 @@
+*{margin: 0px;padding: 0px;}
+a{text-decoration: none;}
+
+.mainone{width:100%;height: 846px;}
+.mainone img{width: 100%;height: 846px;}
+/*距离上或下39  left 57*/
+.maintwo{height: 391px;width: 100%;}
+.maintwo img{width: 471px;}
+.maintwo ul:after{content: ".";visibility: hidden;display: block;clear: both;}
+.maintwo .miaoshu{width: 643px;}
+.maintwo ul li{float: left;margin-left: 37px;list-style: none;margin-top: 39px;}
+.maintwo ul .miaoshu h3{color: #222222;font-size: 20px;font-family: "微软雅黑";} 
+.maintwo ul .miaoshu p{color: :#a3a3a3;font-size: 14px;font-family: "微软雅黑";margin-top: 50px;}
+.maintwo ul .more{width: 50px;height: 20px;color: :#a3a3a3;font-size: 14px;font-family: "微软雅黑";border: 1px solid #484848;}
+/*//总高395  新闻76  距上42  据下17 字18  微软雅黑  Regular  color #222222 第二 下 35 左17  字14  微软雅黑  Regular  color #007f41*/
+/*日期 color777777 字14  多字 14 4b4a4a  黑色 000000 14*/
+.mainthree{height: 397px;width: 100%;background: #efefef;}
+.mainthree .mainthree-top{height:57px;padding-top:42px;color: :#222222;font-size: 30px;font-family: "微软雅黑";}
+.mainthree .mainthree-bottom:after{content: ".";visibility: hidden;display: block;clear: both;}
+.mainthree .mainthree-bottom li{cursor:pointer;width:376px;height:284px;border:1px solid #484848;list-style: none;float: left;margin-left:17px; color: #007f41;font-size: 14px;}
+hr{color:#484848;width:80px; margin-top:20px;margin-left: 10px;}
+.mainthree .mainthree-bottom li .p1{color:#484848 ;margin-left: 10px;}
+.p2{margin-left: -290px;width: 294px;color: #007f41;font-size: 14px;font-family: "微软雅黑";margin-top: 15px;}
+.p3{width: 323px;margin-left: -290px;color: #898989;font-size: 14px;font-family: "微软雅黑";margin-top: 15px;}
+/*color  #ffffff 高84  字18  微软雅黑  Regular*/
+.mainfour{width: 100%;height: 857px;line-height:84px;background: #727071;}
+.mainfour .wrap{width: 1200px;margin-left: 300px;color: #ffffff;font-size: 18px;font-family: "微软雅黑";line-height:84px;height: 84px;}
+/*上海荣耀 字 16  000000  荣耀下 14  5c5c5c*/
+.mainfive{width: 100%;height:680px;}
+.mainfive ul:after{content: ".";visibility: hidden;display: block;clear: both;}
+.mainfive li{list-style: none;float: left;background: #FFFFFF ;margin-left: 50px;}
+.mainfive li img{width:430px ;height: 496px;}
+.mainfive li .div1{width:400px;margin-left:25px;font-size: 16px;color: #000000;margin-top:-50px;}
+.mainfive li .div2{width:400px;margin-left:25px;font-size: 12px;color: #5c5c5c;margin-top:-60px;}
+
+.mainfour .mainsix{width: 25%;margin: 0px auto;}
+.mainfour .mainsix:after{content: ".";visibility: hidden;display: block;clear: both;}
+.mainfour .mainsix li{float: left;list-style: none;margin: 0px auto;margin-top: 25px;}
+.mainfour .mainsix li div{width: 12px;height: 12px ;border-radius: 50%;background: #aaa9aa;margin-left: 13px;line-height: 50px;}
+.mainfour .mainsix li div:hover{background: #FFFFFF;}
+/*产品18 222222  left 17  总高788  系统家具 23 字16  222222*/
+.mainseven{width: 100%;height: 788px;}
+.mainseven-top{width:100%;height:70px;line-height:93px;color: #222222;font-size: 18px;font-family: "微软雅黑";}
+.mainseven-bottom:after{content: ".";visibility: hidden;display: block;clear: both;}
+.mainseven-bottom li{float: left;list-style: none;margin-left: 10px;margin-top: 20px;}
+.mainseven-bottom li div{font-size:16px ;color: #222222;}
+/* 总高386 产品视频92 字18 ffffff*/
+.maineight{width: 100%;height: 386px;background: #888888;}
+.maineight-top{width:100%;height:70px;line-height:94px;color: #FFFFFF;font-size: 18px;}
+.maineight-bottom:after{content: ".";visibility: hidden;display: block;clear: both;}
+.maineight-bottom li{list-style: none;float: left;margin-left: 13px;}
+/*267  1/18  000000 2、22 15836d  3、14  676767*/
+
+

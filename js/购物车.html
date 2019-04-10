@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+			//三种输出方式  alert console  document.write("") 
+//			var num=111;
+//			alert(num);
+//			document.write("1111");
+//			console.log(1);
+			
+			//数据类型   纯净数字 不带符号  都是number类型  字符串""
+		</script>
+	</head>
+	<body>
+		<!--留言板-->
+		<div >
+			<input type="text" placeholder="请输入留言内容" />
+			<button onclick="btn()" >点击添加</button>
+		</div>
+		<script>
+			
+			var  oBoX=document.getElementsByTagName("div")[0];
+			var inp=document.getElementsByTagName("input")[0];
+			function  btn(){
+				var  p1=document.createElement("p");
+				
+				p1.innerHTML=inp.value;
+				oBoX.appendChild(p1);//添加
+				inp.value="";
+			}
+			
+			
+			
+			
+//			var a=2;
+//			var b="123";
+			//隐式转换  字符转换number  显示转换
+			
+			//数字转化字符串 toString
+			
+			
+			//检测数据类型 typeof
+			
+//			alert(a+b);
+
+			var a="1234567";
+//			alert(a.length)
+			//alert(a.substr(2,5));
+		</script>
+	</body>
+</html>

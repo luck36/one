@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>兼容性节点操作Element</title>
+		<link rel="stylesheet" href="css/dom.css" />
+	</head>
+	<body>
+		<section id="news">
+		 	<header>京东快报<a href="#">更多 > </a></header>
+         	<ul>
+         		<li><a href="#">志玲姐姐：墨镜300减30</a></li>
+         		<li><a href="#">京东无锡馆正式启动</a></li>
+         		<li><a href="#">99元抢平板！品牌配件199-100</a></li>
+         		<li><a href="#">节能领跑京东先行</a></li>
+         		<li><a href="#">高洁丝实力撩货，领券五折</a></li>
+         	</ul>
+		</section>
+	</body>
+	<script>
+		//获得节点
+		var  obj=document.getElementById("news");
+		//获得obj节点中第一个子节点header
+		var objfirst=obj.firstElementChild.innerHTML;
+			//console.log(objfirst);
+		//获取obj节点中最后一个子节点ul
+		var objlast=obj.lastElementChild.innerHTML;
+			//console.log(objlast);
+		//获取obj节点中最后一个子节点ul中的第一子节点li
+		var objfis=obj.lastElementChild.firstElementChild.innerHTML;
+			//console.log(objfis);
+		//获取obj节点中最后一个子节点ul中的第二个子节点li
+		var objnext=obj.lastElementChild.firstElementChild.nextElementSibling.innerHTML;
+			//console.log(objnext);
+		//获取obj节点中最后一个子节点ul中的倒数第二子节点li
+		var objpre=obj.lastElementChild.lastElementChild.previousElementSibling.innerHTML;
+			//console.log(objpre);
+			
+		//节点类型、名字  
+		
+		/*        
+	   		*     nodetype   返回值     nodeName返回节点或属性名称        nodeValue返回节点或属性的值
+	   		*       元素element	1         section      id                 id=”news”
+				属性attr 	    2         div          class              class=”hhd”
+				文本text	    3         ul           src
+				注释comments	 8        li
+				文档document	 9
+	   */
+		 //获得节点
+		 var ob=document.getElementById("news");
+		 //得到标签名字
+		 var obname=ob.nodeName;
+			//console.log(obname);
+		 //获得节点类型12389
+		 var obtype=ob.nodeType;
+		 	//console.log(obtype);
+		 //通过id得到属性id名称
+		 var obattr=ob.nodeName;
+		 	console.log(obattr);
+		 //通过id得到属性的值news
+		 var obva=ob.getAttribute("id").nodeValue;
+		 	console.log(obva);
+	</script>
+</html>

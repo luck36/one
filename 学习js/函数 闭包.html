@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>函数 闭包</title>
+		<script>
+//			使用系统函数
+//		 var num1=parseInt("123kk");
+//		 console.log(num1);
+//		 var num2=parseFloat("12.7849家大扫除");
+//		 console.log(num2);
+//		 var num3="pppp";
+//		 console.log(isNaN(num3));
+		 //返回值true或false 用于检查参数是否为字符串
+		
+		/**
+		 * 有参   参数是局部变量  参数分为  形参 和实参   从方法外部传入
+		全局变量 作用域等于整个页面   生命周期=页面关闭 它可以省略var 但建议不省略 语义不明确
+		  局部变量  作用域等于整个方法  生命周期 =方法结束 必须用var
+		  返回值  是一方法执行结束后返回方法调用者一个结果 将执行结果从结果内部传出
+		  
+		  闭包 ：
+		  对外不公开的  包裹结构 或 空间
+		 */
+//		 function  xunhuan(j){
+////		 	var j=prompt("请输入行数")
+//		 	for(var i=1;i<=j;i++){
+//		 		document.write("helloword!<br />")
+//		 	}
+//		 }
+		 
+		 //定义学员数组
+//		 var num=new Array();
+//		 
+//		 function aa(name){
+//		 	num.push(name);//添加
+//		 }
+//		 function show(){
+//		 	for(var i=0;i<num.length;i++){
+//		 		document.write("<br />"+num[i]);
+//		 	}
+//		 }
+		 
+		 //比较大小
+//		 var index1=4;
+//		 var index2=5;
+//		 
+//		 if(isNaN(index1)||isNaN(index2)){
+//		 	document.write("请输入数字")
+//		 }else{
+//		 	var max=maxIndex(index1,index2);
+//		 	document.write("最大值为:"+max)
+//		 }
+//		 function maxIndex(a,b){
+//		 	if(a>b){
+//		 		return a;
+//		 	}else{
+//		 		return b;
+//		 	}
+//		 }
+		 //闭包  不能直接访问数据 提高局部变量的重复使用率  内存会浪费  因为会一直存在  
+		 
+		 function num1(){
+		 	var  b=1;
+		 	return b;
+		 }
+		 var a=num1();
+		 var  b1=num1();
+		 document.write("a1:"+a+"<br />");
+		 document.write("b1:"+b1+"<br />");
+		
+		
+		 function num1(){
+		 	var  b=Math.random();
+		 	return b;
+		  }
+		 var a=num1();
+		 var  b1=num1();
+		 document.write("a2:"+a+"<br />");
+		 document.write("b2:"+b1+"<br />");
+		 
+		 
+		 function  n(){
+		 	var  nu=Math.random();
+		 		function son(){
+		 			return nu;
+		 		}
+		 		return  son;
+		 }
+		 var a=n();
+		 document.write("你好吗"+a+"<br />");
+		 var a1=a();
+		 var  b2=a();
+		 document.write("a3:"+a1+"<br />");
+		 document.write("b3:"+b2+"<br />");
+		</script>
+	</head>
+	<body>
+		<!--<input type="button"  name=""  id="" value="打印" onclick="xunhuan(prompt('请输入行数'))"/>-->
+		
+		<!--<input type="button"  name=""  id="" value="添加" onclick="aa(prompt('请输入姓名'))"/>
+		<input type="button"  name=""  id="" value="查询" onclick="show()"/>
+		
+		<input type="button"  name=""  id="" value="查询大小" onclick="max()"/>-->
+	</body>
+</html>

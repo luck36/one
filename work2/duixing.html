@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>event对象</title>
+		<style>
+			#a{width: 100px;height: 100px;background: red;}
+			#b{width: 50px;height: 50px;background: yellow;margin: 0px auto;}
+			*{margin: 0px;padding: 0px;list-style-type: none;}
+			#mob{position: absolute;width: 60px;background: gray;border: solid 1px cornflowerblue; display: none;}
+		</style>
+	</head>
+	<body id="box">
+		<!--event对象-->
+		<div id="a">
+			<div id="b"></div>
+		</div>
+		<!--默认行为  右击弹出的东西-->
+		<ul id="mob">
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+			<li>oooooo</li>
+		</ul>
+	</body>
+	<script>
+		//event对象获取鼠标坐标
+//		document.onclick=function(e){
+//			//console.log(event.clientX+","+event.clientY);
+//			//兼容浏览器
+//			var en=e||event;
+//			alert(en.clientX+","+en.clientY);
+//		}
+			//阻止冒泡 非IE下 event.stopPropagation
+			//IE下 event.cancelBubbIe=true;		
+		var box=document.getElementById("box");
+		var a=document.getElementById("a");
+		var b=document.getElementById("b");
+		box.onclick=function(e){
+			var  on=e||event;
+			//on.stopPropagation();
+			on.cancelBubble=true;//IE下
+			alert("IE下阻止冒泡");
+		}
+		a.onclick=function(e){
+			var on=e||event;
+			//on.stopPropagation();
+			on.cancelBubble=true;
+			alert("父盒子");
+		}
+		b.onclick=function(e){
+			var on=e||event;
+			//on.stopPropagation();
+			on.cancelBubble=true;
+			alert("子盒子");
+		}
+		
+		document.oncontextmenu=function(e){
+				var  en=e||event;
+				
+				var  on=document.getElementById("mob");
+				on.style.display="block";
+				 var  X=en.clientX;
+				 var  Y=en.clientY;
+				 on.style.left=X+"px";
+				 on.style.top=Y+"px";
+				 return false;//默认右键关闭
+			}
+			//鼠标点击事件不触发
+			document.onclick=function(){on.style.display="none";}
+			//阻止默认行为的方法
+//			document.oncontextmenu=function(){
+//				return false;
+//			}
+	</script>
+</html>

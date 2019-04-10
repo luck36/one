@@ -1,0 +1,79 @@
+*{margin: 0px;padding: 0px;}
+.wrap{margin: 0px auto;width: 1200px;position: relative;}
+.b-box a{text-decoration: none;}
+.b-box a:hover{color: red;}
+ul li{list-style: none;float: left;margin-left: 5px;}
+.b-box{width: 100%;}
+/*第一层*/
+.header{width: 100%;height: 50px;background-color: black;}
+.header-right-xian{color: lightgray;}
+.header-right a{font-size: 15px;font-family: "方正粗黑宋简体";color: white;}
+.header li{line-height: 50px;}
+.header-left a{color: white;font-size: 14px;font-family: "楷体";}
+.header-left{float: right;}
+.header-left img{margin-top: 5px;}
+/*第二层*/
+.box-b{width:100%;height: 100px;}
+.box-b-right{width: 208px;float: left;}
+.box-b-right img{margin-top: 10px;;}
+.box-b-zhong{line-height: 100px;}
+.box-b-zhong a{color:black;font-family: "黑体";}
+.box-b-left {float: right;line-height: 80px;}
+input[type="text"]{width: 300px;height: 36px;background-image: url(../img/text-di.png);background-repeat: no-repeat;background-position: right;}
+.box-b-left img{margin-top: 20px;margin-left: -8px;width: 40px;height: 40px;}
+/*第三层*/
+.box-c{width: 100%;height: 460px;position: absolute;}
+.box-c-right{width: 208px;height: 460px;background-color: darkslategray;float: left;position: relative;}
+.box-c-right li{position: relative;width: 208px;hanging-punctuation: 46px;margin-top: 20px;margin-left: 20px;color: white;font-family: "华文新魏";}
+.box-c-right img{position: relative;left: 60px;}
+.box-c-left{position:relative;}
+.box-c-left-dayu{position: absolute;right: 5px;top: 215px;cursor: pointer;}
+.box-c-left-xiaoyu{position: absolute;left:208px;top: 215px;cursor: pointer;}
+
+.guding{width: 60px;height: 140px;position: fixed;left: 1550px;top: 200px;overflow: hidden;}
+.guding img{width: 60px;height: 60px;cursor: pointer;}
+/*第四层*/
+.box-d{width: 100%px;height: 170px;position: relative;top: 460px;}
+.box-d-right img{width:208px ;height: 170px;float: left;cursor: pointer;}
+.box-d-left li{width:258px ;height: 170px;margin-left: 16px;}
+.box-d-left img{width:310px ;height: 170px;}
+.box-d-left img:hover{box-shadow: gray 10px -10px 30px 5px;}
+/*第五层*/
+.box-e{width: 100%;height: 170px;position:absolute;top:830px ;}
+.box-e img{width: 1200px;height: 120px;}
+/*第六层*/
+.box-f{width: 100%;height: 655px;background-color: gainsboro;position: relative;top: 700px;}
+.box-f-top{height: 40px;}
+.box-f-top-right{margin-right:500px;}
+.box-f-top-left{margin-top: -20px;margin-right:-500px}
+.box-f-bottom-right{width: 233px;float: left;}
+.box-f-bottom-right img:hover{box-shadow: gray 10px -10px 30px 5px;}
+.box-f-bottom-left{width: 1300px;height: 305px;margin-top: 5px;}
+.box-f-bottom-left img{width: 235px;height: 301px; cursor: pointer;}
+.box-f-bottom-left img:hover{box-shadow: gray 10px -10px 30px 5px;}
+/*第七层*/
+.box-g{width: 100%;position:relative;top:700px ;background-color: gainsboro;}
+.box-g img{width: 1200px;}
+/*底部**/
+.box-h{width: 100%;background-color: white;}
+.box-h-top{margin-left: 200px;}
+.box-h-top li{margin-top: 710px;margin-left: 30px;cursor: pointer;}
+.box-h-top li:hover{color: red;}
+.box-h-top a{font-size: 14px;font-weight: 500px;}
+p{width: 100%;height: 1px;border: 1px solid #aaaaaa;background-color: #aaaaaa;margin-top: 700px;position: absolute;top: 60px;}
+.box-h-bottom {position: relative;top:30px;left:30px;border-right: 1px solid   #AAAAAA;float: left;text-align: center;}
+.box-h-bottom li{margin-left: 40px;cursor: pointer;}
+.box-h-bottom  h4,a {color: black;font-size: 17px;margin-top: 10px;}
+.box-h-bottom  h4 a:hover{color:red;}
+.box-h-bottom2{float: left;position: relative;top:-75px;left:820px;}
+.box-h-bottom2 .r{position:relative;top: 5px;right: 570px;}
+
+.box-i{width: 100%;height: 300px;background-color: gainsboro;position: relative;top: 900px;}
+.box-i-logo{width: 100px;height: 120px;position: relative;}
+.box-i-logo img{width: 80px;height: 80px;position:absolute ;left: 0px;top: 20px;}
+.box-i-talk{width: 1090px;position: absolute;left: 82px;top: 25px;}
+.box-i-talk a{font-size: 15px;font-weight: 300;}
+.xian{color: #AAAAAA;}
+.box-i-talk pre{position: absolute;top: 30px;right: 240px;color: #AAAAAA;font-size: 14px;}
+.box-i-talk pre img{width: 100px;height: 30px;}
+.box-i-bottom img{width: 300px;height: 19px;position: absolute;top: 150px;left: 240px;}

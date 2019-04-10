@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>dom节点</title>
+		<link rel="stylesheet" href="css/dom.css" />
+		
+	</head>
+	<body>
+		<section id="news"><header>京东快报<a href="#">更多 > </a></header>
+         	<ul><li><a href="#">志玲姐姐：墨镜300减30</a></li><li><a href="#">京东无锡馆正式启动</a></li><li><a href="#">99元抢平板！品牌配件199-100</a></li><li><a href="#">节能领跑京东先行</a></li><li><a href="#">高洁丝实力撩货，领券五折</a></li></ul>
+        </section>
+	</body>
+	<script>
+		//获取全部节点
+			var  obj=document.getElementById("news");
+			var objboth=obj.parentNode.innerHTML;
+			//alert(objboth);
+		//获取节点个数
+			var objmath=obj.childNodes.length;
+			//console.log(objmath);
+		//获取子元素中第一个元素
+		var objfirst=obj.firstChild.innerHTML;
+			//console.log(objfirst);
+		//获取子元素中最后一个元素
+		var  objlast=obj.lastChild.innerHTML;
+			//console.log(objlast);
+		//previousSibling上一个节点  nextSibling下一个节点
+		//获取子元素中第三个元素ul
+		var  objpre=obj.lastChild.previousSibling.innerHTML;
+			console.log(objpre);
+		//获取子元素中第三个元素(ul)中第一个元素li
+		var  objprefirst=obj.lastChild.previousSibling.firstChild.innerHTML;
+			//console.log(objprefirst);
+		//获取子元素中第三个元素(ul)中第二个元素li 同辈之间
+		var  objprefirstto=obj.lastChild.previousSibling.firstChild.nextSibling.innerHTML;
+			//console.log(objprefirstto);
+	</script>
+</html>

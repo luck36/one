@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件绑定</title>
+	</head>
+	<body>
+		<!--事件绑定三种方法-->
+		<button id="a">方式一</button>
+		<h3 id="h">你好啊<button id="b">方式二</button></h3>
+		<button onclick="c()">方式三</button>
+		
+		<!--鼠标事件-->
+		<button onclick="a1()">鼠标单击</button>
+		<button ondblclick="b1()">鼠标双击</button>
+		<button onmouseover="c()">鼠标移入</button>
+		<button onmouseout="d()">鼠标移出</button>
+		<button onmousedown="e()">鼠标按下</button><!--不分鼠标左右键-->
+		<button onmousemove="f()">鼠标移动</button>
+		<button onmouseup="g()">鼠标松开</button><!--不分鼠标左右键-->
+		<form id="" method="post" onreset="testOnreset()" onsubmit="testOnsubmit()">
+			<input type="text" name="" id="" value="获得焦点事件" onfocus="testOnfocus()"/>
+			<input type="text" name="" id="" value="失去焦点事件" onblur="testOnblur()"/>
+		    <input type="text" name="" id="" value="改变域内容"  onchange="testOnchange()"/>
+		    <input type="reset" value="重置"/>
+		    <input type="submit" value="提交"/>
+		</form>
+		<!--键盘事件 按下onkeydown 松开onkeyup 按下和松开 onkeyress()-->
+		按下按键:<input type="text"   onkeydown="testdown()" />
+		松开按键<input type="text" onkeyup="testup()"/>
+		按下任意按键<input type="text"  onkeyup="testress()"/>
+		
+		<!--UI事件-->
+			<div onload="testOnloat()" onresize="testOnresize()">
+				<textarea onscroll="testOnscroll()">
+					你若化成风
+					<br/><br /><br/><br /><br/><br /><br/><br />
+					<br/><br /><br/><br /><br/><br /><br/><br />
+					我必化成雨
+				</textarea>
+			</div>
+	</body>
+	<script>
+//			第一种  直接绑定
+		var a=document.getElementById("a");
+		a.onclick=function(){alert("第一种绑定方式啊");}
+//			第二种  绑定 使用addEventListener()方法
+//			语法 对象.addEventListener(事件名称,事件处理函数,布尔值)
+//冒泡由内往外   捕获 从外向内   默认值为 false, 即冒泡传递，当值为 true 时, 事件使用捕获传递。
+		var b=document.getElementById("b");
+		b.addEventListener("click",function(){alert("第二种绑定方式");},true);
+		var h=document.getElementById("h");
+		h.addEventListener("click",function(){alert("第二种     绑定方式");},true);
+		//			第三种  绑定
+		function c(){
+			alert("第三种");
+		}
+		
+		//鼠标事件
+	  function a1(){console.log("单击鼠标")}
+	   function b1(){ console.log("我是双击");}	
+	   function  c(){console.log("我是鼠标移入");}
+	   function  d(){console.log("我是鼠标移出");}
+	   function  e(){console.log("我是鼠标按下");}
+	   function  f(){console.log("我是鼠标移动");}
+	   function  g(){console.log("我是鼠标松开");}
+	   //from表单  焦点事件
+	   //获得焦点事件 方法Onfocus
+	   function testOnfocus(){
+	   	console.log("获得焦点事件");
+	   }
+	   //失去焦点事件 方法Onblur
+	   function testOnblur(){
+	   	console.log("失去焦点");
+	   }
+	   //改变域的内容 方法Onchange()
+		function testOnchange(){console.log("改变域的内容");}
+		//表单重置时触发  方法Onreset
+		function testOnreset(){console.log("表单重置时触发");}
+		//表单提交时触发 方法Onsubmit
+		function testOnsubmit(){console.log("表单提交时触发");}
+		
+		//键盘事件 按下onkeydown 松开onkeyup 按下和松开 onkeyress()
+		//按键按下
+	function testdown(){console.log("键被按下");}
+	//按键松开
+	function testup(){console.log("键被松开");}
+	//按键按下和松开
+	function testress(){console.log("按下和松开");}
+	
+//	UI事件 onload里面是方法 加载完了才触发  加载导航 主体 方法   onresize 浏览器大小 框架 改变尺寸  onscroll滚动 
+	   //页面加载完毕时触发
+			function testOnload(){console.log("页面加载完毕...");}
+			//当前窗口尺寸改变时触发
+			function testOnresize(){console.log("窗口或框架改变尺寸");}
+			//文档滚动式触发
+			function testOnscroll(){console.log("文档被滚动了");}
+	</script>
+</html>

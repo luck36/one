@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>BOM/DOM</title>
+		<script>
+			//弹出框事件	·
+//			window.alert("警告框");
+////			window.confirm("确认框");
+//			var flag=window.confirm("确定删除吗？");
+//			console.log(flag);
+////			window.prompt("输入框");
+//			var  a=window.prompt("输入框");
+//			console.log(a);
+			
+//			document.write(location.href+"<br />");
+			//document.write(location.href="http://www.sina.com");
+//			document.write(location.pathname);
+			function u(){
+				location.assign("http://www.baidu.com");
+			}
+			function n(){
+				location.replace("http://www.souhu.com");
+			}
+//			var time;
+//			function stat(){
+//				time=setTimeout('alert("add")',1 000);
+//			}
+//			function  stop(){
+//				clearTimeout(time);
+//			}
+//			
+//			var t;
+//			function testInval(){
+//				t=setInterval('alert("呵呵哒")',3000);
+//			}
+//			function  clearInval(){
+//				clearInterval(t);
+//			}
+			
+			//var id=document.getElementById("btn");
+//			var  mybtn=document.getElementsByTagName("button")[1];
+//			mybtn.onclick=function(){
+//				alert("kkk");
+//			}
+//			id.onclick=function(){
+//				alert("jjj");
+//			}
+		</script>
+	</head>
+	<body>
+		<!--js构成  
+			ESMAScript 是一种语法标准
+			 BOM  浏览器对象模型  提供 独立浏览器与对象交互 标准 ECMA  
+			 DOM  标准 W3C  文档对象模型  操纵HTML文档
+			 省略window  alert  prompt   定时器   confire   Cookie  
+			dom包含 Window   
+			dom  history  历史  前进或后退 
+			localStorage  存储对象 用来存储数据  和cookie相似
+			SessionStorage 
+			
+			警告框  confire  alert
+			提示框   
+			弹框  alert
+			
+			lo
+		-->
+		<input type="button"  name=""  id=""  value="点" onclick="u()"/>
+		<input type="button"  name=""  id=""  value="点我" onclick="n()"/>
+		<!--<input type="button"  name=""  id=""  value="开始" onclick="stat()"/>-->
+		<!--<input type="button"  name=""  id=""  value="结束" onclick="stop()"/>-->
+		
+		<!--<input type="button"  name=""  id=""  value="间隔" onclick="testInval()"/>
+		<input type="button"  name=""  id=""  value="清除间隔" onclick="clearInval()"/>-->
+
+		<!--<input type="button"  id="btn"  value="id按钮" />
+		<!--<button id="btn">id按钮</button>
+		<button class="btn">name按钮</button>
+		<button class="btn">class按钮</button>-->
+		<!--<p id="p1">我是p1</p>
+		
+		<div id="d1">
+			
+		</div>-->
+		<!--<script>
+			document.getElementById("p1").style.color="red";
+			p1.innerHTML="我是p2";
+			
+			
+			var  dic=document.getElementById("d1");
+			dic.setAttribute("style","width:35px;height: 100px;border:1px  solid  blue;");
+//			dic.setAttribute("style","");
+//			dic.setAttribute("style","");
+			
+//			p1.setAttribute("style","red");
+		</script>-->
+	</body> 
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			table{
+				border: 1px solid black;
+			}tr{
+				border: 1px solid black;
+			}
+			td{
+				height: 20px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td><input type="checkbox" onclick="ch1()"/></td>
+				<td>姓名</td>
+				<td>居住地</td>
+			</tr><tr>
+				<td><input type="checkbox" /></td>
+				<td>李孟晴</td>
+				<td>虞城县</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox"/></td>
+				<td>孙妍</td>
+				<td>临颍县</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox"/></td>
+				<td>孟若倚</td>
+				<td>宁陵县</td>
+			</tr>
+		</table>
+	</body>
+	<script>
+		
+		//全选
+		var inp1=document.getElementsByTagName("input");
+		
+		function ch1(){
+			for(var i=0;i<inp1.length;i++){
+				
+				inp1[i].checked=inp1[0].checked;
+				
+			}
+		}
+		
+		
+		//九九乘法表
+		for(var i=1;i<=9;i++){
+			for(var j=1;j<=i;j++){
+				document.write(i+"*"+j+"="+i*j+"&nbsp");
+			}
+			document.write("<br />")
+		}
+		//直角三角形
+		for(var i=1;i<=5;i++){
+			for(var j=0;j<i*2-1;j++){
+				document.write("*");
+			}
+			document.write("<br />")
+		}
+		//等腰三角形
+		for(var i=1;i<=5;i++){
+			for(var k=5;k>=i-1;k--){
+				document.write("&nbsp");
+			}
+			for(var j=0;j<i*2-1;j++){
+				document.write("*");
+			}
+			document.write("<br />")
+		}
+		//菱形
+		for(var i=1;i<=5;i++){
+			for(var k=5;k>=i-1;k--){
+				document.write("&nbsp");
+			}
+			for(var j=0;j<i*2-1;j++){
+				document.write("*");
+			}
+			document.write("<br />")
+		}
+		for(var i=1;i<=5;i++){
+			for(var l=0;l<=i;l++){
+				document.write("&nbsp;&nbsp");
+			}
+			for(var k=7;k>=i*2-1;k--){
+				document.write("*");
+			}
+			document.write("<br />")
+		}
+		
+		
+	</script>
+</html>

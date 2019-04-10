@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dom节点</title>
+		<script>
+			
+		</script>
+	</head>
+	<body>
+		<!--<img src="img/baby_1.jpg" />
+		<h1>婴儿车--><!--</h1>
+		<p>dom应用</p>-->
+		<section id="news"><header>京东快报<a href="#">更多</a></header>
+			<ul><li><a href="#">志玲姐姐</a></li><li><a href="#">你好</a></li></ul>
+		</section>
+		<!--<section id="news">
+			nihao
+			<header>京东快报<a href="#">更多</a></header>
+			<ul>
+				<li><a href="#">志玲姐姐</a></li>
+				<li><a href="#">你好</a></li>
+				<li><a href="#">志玲姐姐哈哈</a></li>
+				<li><a href="#">你好健健康康</a></li>
+			</ul>
+		</section>-->
+	</body>
+	<script>
+		var obj=document.getElementById("news");
+//		var  fu=obj.parentNode.innerHTML;
+//		alert(fu);  获得全部内容
+//	var objArray=obj.childNodes.length;
+//		alert(objArray);获取有多少节点
+//		var  objfast1=obj.firstChild.innerHTML;
+		//alert(objfast1);//获得第一个节点
+		var objlast=obj.lastChild.previousSibling.innerHTML;
+		console.log(objlast);//上一个
+		//var objlast=obj.lastChild.innerHTML;
+		//console.log(objlast);//最后一个
+		//alert(objlast);
+//		var objli=obj.lastChild.previousSibling.firstChild.innerHTML;//标签里的子节点
+//		alert(objli);
+		//previousSibling上一个节点  nextSibling下一个节点
+//		var objwuli=obj.lastChild.previousSibling.firstChild.nextSibling.innerHTML;
+//		alert(objwuli);
+
+		//Element属性 兼容空格节点
+		
+//		var obj=document.getElementById("news");
+//		
+//		var  j=obj.firstChild.innerHTML;
+//		//console.log(j);
+//		var  objfirst=obj.firstElementChild.innerHTML;
+//		//alert(objfirst);
+//		var  objlast=obj.lastElementChild.innerHTML;
+//		console.log(objlast);
+//		
+////		var  objlast=obj.lastElementChild.firstElementChild.innerHTML;
+////		console.log(objlast);
+//		
+//		var  objl=obj.lastElementChild.firstElementChild.innerHTML;
+//		console.log(objl);
+
+//		var obj=document.getElementById("news");
+//		var biaoqian=obj.nodeName;
+//		//console.log(biaoqian);//节点名字
+//		var  leixing=obj.nodeType;
+//		//console.log(leixing);
+//		var v=obj.nodeValue;
+//		console.log(v);
+		
+	</script>
+</html>

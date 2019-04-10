@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格</title>
+	</head>
+	<body>
+		<div style="border: 1px solid red;"></div>
+		<input type="button" value="添加"  onclick="add()"/>
+		<input type="button" value="删除"  onclick="del()"/>
+	</body>
+	<script>
+		function add(){
+			var div1=document.getElementsByTagName("div")[0];
+				var tabl1=document.createElement("table");
+				tabl1.setAttribute("border","1px solid blue");
+				for (var i=0;i<=5;i++) {
+					var tr1=document.createElement("tr");
+					tr1.setAttribute("border","1px solid green");
+					for (var j=0;j<=5;j++) {
+						var td1=document.createElement("td");
+						td1.setAttribute("border","1px solid black");
+						td1.setAttribute("style","width:20px;height:20px;");
+						tr1.appendChild(td1);
+					}
+					tabl1.appendChild(tr1);
+				}
+			div1.appendChild(tabl1);
+		}
+		function del(){
+			var div1=document.getElementsByTagName("div")[0];
+			var b=div1.lastElementChild.lastElementChild;
+
+			var a=b.lastElementChild;
+			a.parentNode.removeChild(a);
+			
+		}
+	</script>
+</html>

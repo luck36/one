@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件</title>
+		
+	</head>
+	<body>
+		<!--事件绑定的是标签、函数
+			常用js事件
+			绑定事件最常用的三种方式 
+			1、在按钮中声明onclick方法
+			2、
+			3、使用addEventListener
+			事件是文档或者浏览器窗口发生的，特定的交互事件
+			一、onclick单击
+			 ondbclick  双击
+			 onmoveover 鼠标移到某元素上
+			 onmouseout  移开
+			 
+		-->
+		<button id="btn1">方式1</button>
+		<p id="p1">呵呵
+			<button id="btn2">方式2</button>
+		</p>
+		<button id="btn3" onclick="testButton()">方式3</button>
+		<button onclick="testonclick()">鼠标单击</button>
+		<button ondblclick="b()">鼠标双击</button>
+		<button onmouseover="c()">鼠标移入</button>
+		<button onmouseout="d()">鼠标移出</button>
+		<button onmousedown="e()">鼠标按下</button><!--不分鼠标左右键-->
+		<button onmousemove="f()">鼠标移动</button>
+		<button onmouseup="g()">鼠标松开</button><!--不分鼠标左右键-->
+	</body>
+	<script>
+		var btn2=document.getElementById("btn2");
+		btn2.addEventListener("click",function(){alert("ee");},false);//事件click ie9  事件传递的方式 冒泡和捕获
+		//冒泡由内往外   捕获 从外向内
+		var p1=document.getElementById("p1");
+		p1.addEventListener("click",function(){alert("kkk");},false);
+		
+		var btn1=document.getElementById("btn1");
+		btn1.onclick=function(){alert("1");}
+			
+		function testButton(){
+			alert("hhhh");
+		}
+		//鼠标事件
+	   function b(){ console.log("我是双击");}	
+	   function  c(){console.log("我是鼠标移入");}
+	   function  d(){console.log("我是鼠标移出");}
+	   function  e(){console.log("我是鼠标按下");}
+	   function  f(){console.log("我是鼠标移动");}
+	   function  g(){console.log("我是鼠标松开");}
+	   //form表单 失去 获取焦点
+	   //键盘事件 按下onkeydown 松开onkeyup 按下和松开 onkeyress()
+	   //界面UI事件onload里面是方法 加载完了才触发  加载导航 主体 方法   onresize 浏览器大小 框架 改变尺寸  onscroll滚动 
+	   
+	</script>
+</html>

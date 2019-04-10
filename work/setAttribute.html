@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>使用setAttribute设置属性</title>
+		<script>
+//			function bookhs(){
+//				//得到img标签对象
+//				var  img1=document.getElementById("imageid");
+//				//得到input集合
+//				var input1=document.getElementsByName("book");
+//				//判断是否选择
+//				if(input1[0].checked){
+//					img1.setAttribute("src","img/newBook01.jpg");
+//					img1.setAttribute("alt","好吗好的");
+//					img1.setAttribute("title","好吗好的");
+//				}
+//				else if(input1[1]){
+//					img1.setAttribute("src","img/newBook02.jpg");
+//					img1.setAttribute("alt","永无止尽的约会");
+//					img1.setAttribute("title","永无止尽的约会");
+//				}
+//			}
+//		    function imghs(){//
+//				var img=document.getElementById("imageid");
+//				var typeval=img.getAttribute("title");
+//				console.log(typeval);
+//			}
+
+//			节点复制操作
+			function bookhs(){
+				 //获得单选按钮的节点对象 
+				 var b=document.getElementsByName("book");
+				 var bName=document.getElementsByTagName("div")[0];//div集合
+				 if(b[0].checked){
+				 	//创建一个img节点元素
+				 	var img1=document.createElement("img");
+				 	//添加属性
+				 	img1.setAttribute("src","img/newBook01.jpg");
+				 	
+				 	 //当前图片对象 内嵌入  div标记中，作为div 的子标记 
+				 	 bName.appendChild(img1);
+				 }
+				 else if(b[1]){
+				 	var img2=document.createElement("img");
+				 	img2.setAttribute("src","img/newBook02.jpg");
+				 	 bName.appendChild(img2);
+				 }
+			}
+		</script>
+	</head>
+	<body>
+		<!--<p>
+			请选择喜欢的书籍：
+			<input type="radio" name="book" onClick="bookhs();">好吗好的 0
+			<input type="radio" name="book" onClick="bookhs();">永无止尽的约会1
+			<div>
+				<img src="" alt="" title="" id="imageid" onClick="imghs();">
+				<span></span>
+			</div>
+		</p>-->
+		
+		<p>
+			请选择您喜欢的书：
+			<input type="radio" name="book" onClick="bookhs();">好吗好的0
+			<input type="radio" name="book" onClick="bookhs();">永无止尽的约会1
+		</p>
+
+		<div style="border:1px solid red;">
+		  
+		</div>
+	</body>
+</html>

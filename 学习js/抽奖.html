@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>抽奖</title>
+		<style>
+			
+			input[type="button"]{width: 150px;height: 100px;text-align: center;background-color: red;color: white;font-size: 30px;font-weight: 500;}
+		</style>
+		<script>
+			function choujiang(){
+				var abc=Math.floor(Math.random()*9);
+				
+				if(abc==5 || abc==6){
+					document.write("恭喜您，荣获二等奖  ");
+				}
+				else if(abc==8){
+					document.write("恭喜您，荣获一等奖 " );
+				}
+				else{
+					document.write("很抱歉，您没有中奖，继续努力，谢谢")
+				}
+			}
+ 			
+ 			
+		</script>
+	</head>
+	<body>
+		<input type="button"  value="幸运抽奖" onclick="choujiang()" />
+	</body>
+</html>

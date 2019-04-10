@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			td{
+				border: 1px solid black;
+				width: 30px;
+				height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<table cellpadding="0" cellspacing="0">
+			
+		</table>
+		<input type="button" value="添加" onclick="add()"/>
+	</body>
+	<script>
+		var  tab=document.getElementsByTagName("table")[0];
+		function add(){
+			var tr1=document.createElement("tr");
+			tab.appendChild(tr1);
+			var td1=document.createElement("td");
+			tr1.appendChild(td1);
+			var td2=document.createElement("td");
+			tr1.appendChild(td2);
+			var td3=document.createElement("td");
+			tr1.appendChild(td3);
+			var td4=document.createElement("td");
+			tr1.appendChild(td4);
+			var td5=document.createElement("td5");
+			tr1.appendChild(td4);
+			
+		}
+	</script>
+</html>

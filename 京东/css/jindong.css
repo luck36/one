@@ -1,0 +1,39 @@
+*{margin: 0px;padding: 0px;}
+.box{width: 100%;}
+.wrap{width: 1200px;margin: 0px auto;}
+.box-one {width:100%;position: relative;height: 100px;}
+.box-one-left li{float: left;margin-left: 10px ;list-style: none;line-height: 150px;}
+.box-one-left{font-size: 30px;height: 100px;position: absolute;}
+.box-one-right {position: absolute;right: 100px;bottom: 0px;}
+.box-one-right li{float:left;list-style: none;}
+.box-one-right a{color:gainsboro;text-decoration: none;}
+.box-one-right a:hover{color: red;text-decoration: underline;}
+
+.box-two{font-size: 12px;width: 100%;height: 30px;line-height: 30px;color: gainsboro;background-color: beige;clear: both;position:absolute;top: 100px;text-align: center;}
+
+.box-three{width: 100%;height:400px;background-color: blueviolet;position: relative;top: 30px;}
+.box-three-left{position: absolute;left: 100px;}
+.box-three-left img{width: 600px;height: 400px;margin-left: 100px;}
+.box-three-right{width:350px;height:350px;position: absolute;top:20px;right:245px;border: 1px solid white;background-color: white;}
+.box-three-right-top{text-align:center ;width:350px;height:30px;line-height:30px;font-size:12px;border-bottom:1px solid beige;color: gainsboro;background-color: beige;}
+.box-three-right .zi{width: 350px;height: 50px;line-height: 50px;border-bottom: 1px solid beige;}
+.box-three-right .zi li{float: left;list-style: none;margin-left: 50px;}
+.box-three-right .zi li:hover{color: red;}
+.box-three-right .zhanghu{width: 350px;margin-top: 20px;margin-left: 20px;}
+.box-three-right .zhanghu input[type="text"]{background-image: url(../img/hao.png);background-repeat: no-repeat;background-position: left;width: 280px;height: 50px;text-align: center;}
+.box-three-right .zhanghu input[type="password"]{background-image: url(../img/密码.png);background-repeat: no-repeat;background-position: left;width: 280px;height: 50px;text-align: center;}
+.box-three-right .wang{float: right;margin-top: 10px;font-size: 14px;color: black;}
+.box-three-right .wang a:hover{color: red;text-decoration: underline;}
+.box-three-right .anniu{widows: 350px;height: 55px;}
+.box-three-right .anniu  input[type="button"]{margin-left:20px;margin-top:10px;width: 300px;height: 50px;line-height: 50px;font-size: 13px;color: white;background-color: red;}
+.box-three-right .foot {position: absolute;bottom: 10px;}
+.box-three-right .foot li{float: left;list-style: none;margin-left: 10px;margin-top: 10px;color: #F5F5DC;}
+.box-three-right .foot  .liji{position: absolute;right:-150px;}
+.box-three-right .foot  .liji a{color: red;text-decoration: none;}
+.box-three-right .foot  .liji a:hover{text-decoration: underline;}
+.box-four-top{position: absolute;right: 300px;}
+.box-four{width: 100%;height: 100px;position: relative;top: 50px;}
+.box-four-top li{margin-left: 10px;text-align: center;float: left;list-style: none;}
+.box-four-top li a{color: black;text-decoration: none;font-size: 13px;}
+.box-four-top li a:hover{color: red;text-decoration: underline;}
+.box-four p{position: absolute;top: 30px;left: 400px;}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js内置对象</title>
+		<script>
+			var num1=[1,4,3,5,2,6,7];
+			var num2=new Array(5);
+			//动态赋值
+			for(var i=0;i<num2.length;i++){
+				document.write(num2[i]=i*2+"<br/>");
+			}
+			for(var j in  num1){
+//				document.write("下标 ........"+j+"<br />");
+				document.write("遍历 ........"+num1[j]+"<br />");
+			}
+			var num3=new Array();
+			
+			//var num4=new Array([1,2]);二维数组
+			//document.write("<br />"+num4);
+			document.write("<br />"+num1);
+			
+			document.write("<br />"+num2);
+			document.write("<br />"+num3);
+			document.write("字符串分割");
+			document.write("<br />"+num1.join(":"));
+			document.write("<br />追加含义push 返回追加后的数组的长度");
+			document.write("<br />"+num1.push(10,8));
+			document.write("<br />两对数组拼接");
+			document.write("<br />"+num1.concat(num2));
+			document.write("<br />。。。。。。。。。。。。。。。排序。。。。。。。。。。。。。。。原理：冒泡排序");
+			document.write("<br />"+num1.sort());//排序  只认识1以内的数
+			document.write("<br />"+num1.sort(function(a,b){return a-b;}));//正序
+			document.write("<br />"+num1.sort(function(a,b){return b-a;}));//倒序
+			
+			document.write("<br />时间静态");
+			var d=new Date();
+			document.write(d);
+			var d=new Date("<br />3;19;2019;11:;10:;11");
+			document.write(d);
+			document.write("<br />时间动态");
+			document.write("<br />"+d.getFullYear()+"年"
+									+(d.getMonth()+1)+"月"
+									+d.getDate()+"日"
+									+d.getHours()+"时"
+									+d.getMinutes()+"分"
+									+d.getSeconds()+"秒"+"周"+d.getDay());
+									
+			
+		</script>
+	</head>
+	<body>
+		<!--Data对象   操作时间日期
+		String对象的使用 支持对字符串的处理
+		Array对象的使用 在单独变量命中存储一系列的值
+		Math对象的使用 用于执行数字任务
+		js中所有事物都是对象
+			内置      				自定义
+			基于对象直接用       需要创建
+		数组作用： 排序
+		数组常用方法及属性
+		
+		String StringBuffter 
+		  -->
+		
+	</body>
+</html>

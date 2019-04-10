@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>京东</title>
+		<link rel="stylesheet" href="css/jindong.css" />
+		<script>
+			function yanzheng(){
+				var name=document.getElementById("name").value;
+				var pwd=document.getElementById("pwd").value;
+				if(name==null&&name.length>6||name.length<=12){
+					alert("账号不为空且字符大于6小于12");
+				}else if(pwd==null&&pwd.length>0||pwd<=8){
+					alert("密码不为空且字符大于0小于等于8");
+				}
+			}
+//			function name(){
+//				alert("nnnn")
+//				var name=document.getElementById("name").value;
+//				if(name==null&&""){
+//					alert("账号不为空且大于0");
+//				}else if(name.length>6&&name.length<12){
+//					alert("账号字符大于6小于12");
+//				}else{
+//					alert{"成功"}
+//				}
+//			}
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box-one">
+				<div class="wrap">
+					<div class="box-one-left">
+						<ul>
+							<li><img src="img/logo.png" /></li>
+							<li>欢迎登录</li>
+						</ul>
+					</div>
+					<div class="box-one-right">
+						<ul>
+							<li style="text-align:center;width: 30px;height: 20px;line-height: 5px;background-color: red;">...</li>
+							<li style="margin-bottom: 10px;"><a href="#">登录页面,调查问卷</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="box-two">
+				<div class="wrap">
+					依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版《<h6 style="display:inline-block">京东隐私政策</h6>》已上线，将更有利于保护您的个人隐私。
+				</div>
+			</div>
+			<div class="box-three">
+				<div class="wrap">
+					<div class="box-three-left">
+						<img src="img/背景.png" />
+					</div>
+					<div class="box-three-right">
+						<div class="box-three-right-top">
+							京东不会以任何理由要求您转账汇款，谨防诈骗。
+						</div>
+						<div class="zi">
+							<ul>
+								<li>扫码登录</li>
+								<li style="color: beige;">|</li>
+								<li>账户登录</li>
+							</ul>
+						</div>
+						<div class="zhanghu">
+							<input type="text" placeholder="邮箱/用户名/已验证手机"  id="name" />
+							<input type="password" placeholder="密码" id="pwd" />
+						</div>
+						<div class="wang">
+							<a>忘记密码</a>
+						</div>
+						<div class="anniu">
+							<input type="button" value="立即注册" onclick="yanzheng()"/>
+						</div>
+						<div class="foot">
+							<ul>
+								<li><img src="img/l_1_h.png" />QQ</li>
+								<li>|</li>
+								<li><img src="img/l_4_h.png" />微信</li>
+								<li class="liji"><a href="#">立即注册</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-four">
+				<div class="wrap">
+					<div class="box-four-top">
+						<ul>
+							<li><a href="#">关于我们</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">联系我们</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">人才招聘</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">商家入驻</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">广告服务</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">手机京东</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">友情链接</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">销售联盟</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">京东社区</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">京东公益</a></li>
+							<li style="color: beige;">|</li>
+							<li><a href="#">English Site</a></li>
+						</ul>
+					</div>
+					<p>Copyright&nbsp;2004-2019&nbsp;京东JD.conm版权所有</p>
+				</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+.main-one{width: 100%;height: 604px;background-image: url(../images/2photo_01.png);background-size: 100% 100%;background-repeat: no-repeat;}
+.main-one-1{width: 100%;height: 59px;background-image: url(../img/four_02.png);opacity: 0.3;background-size: 100% 100%;background-repeat: no-repeat;}
+.main-one-1 ul{display: flex;justify-content: space-between;margin-left: -65px;margin-right: 260px;}
+.main-one-1 ul li{list-style: none;}
+.main-one-1 ul li a{color: #038dd8;font-size: 14px;line-height: 59px;}
+.main-one-1 ul li a:hover{color: black;}
+
+.main-one-2{width: 100%;height: 13px;background-image: url(../img/four_04.png);background-size: 100% 100%;background-repeat: no-repeat;margin-top: 532px;}

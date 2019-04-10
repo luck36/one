@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件3</title>
+		<style>
+			#box{width: 150px;height: 150px;background: red;position: absolute;cursor: move;}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+	<script>
+		//获取元素
+		var  box=document.getElementById("box");
+		//写鼠标按下事件
+		box.onmousedown=function(e){
+			var  oEvent=e||event;
+			//获取到点位置
+			//alert(oEvent.clientX+","+oEvent.clientY);
+			//得出盒子边框到鼠标点击位置的坐标
+			var  x=oEvent.clientX-box.offsetLeft;//X轴 oEvent.clientX 鼠标据浏览器位置  box.offsetLeft;盒子据浏览器位置
+			var  y=oEvent.clientY-box.offsetTop;
+
+//			鼠标移动
+			document.onmousemove=function(e){
+				var  oEvent=e||event;
+				//鼠标到浏览器位置-x(鼠标点击盒子的距离)=盒子到浏览器的距离
+				var left=oEvent.clientX-x;
+				var  top=oEvent.clientY-y;//盒子到浏览器距离
+				
+				//最大高度=可视高度-盒子高度
+				if(left<0){left=0};
+				if(top<0){top=0};
+				var  maxw=document.documentElement.clientWidth-box.offsetWidth;
+				var  maxH=document.documentElement.clientHeight-box.offsetHeight;
+				
+				if(left>maxw){left=maxw};
+				if(top>maxH){top=maxH};
+				box.style.left=left+"px";
+				box.style.top=top+"px";
+			}
+			
+		}
+		//松开按键事件
+		box.onmouseup=function(){document.onmousemove=null;}
+	</script>
+</html>

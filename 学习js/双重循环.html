@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>双重循环</title>
+		<script>
+			//break continue
+			//			for(var i=1;i<=10;i++){
+			//				if(i==8){
+			//					break;
+			////					continue;
+			//				}
+			//				document.write("第"+i+"次打印<br />");
+			//			}
+			//			//九九乘法表
+			for(var n = 1; n <= 9; n++) {
+				for(var j = 1; j <= n; j++) {
+					document.write(n + "*" + j + "=" + n * j + "&nbsp;&nbsp");
+				}
+				document.write("<br />")
+			}
+			//冒泡排序
+			//				一组数据来排队,
+			//				两两相对小在前.
+			//				两层循环n-1,
+			//				内层循环n-1-i.
+			//			var temp=0;
+			//			var num=[5,2,1,6,4,3];
+			//			for(var i=0;i<num.length-1;i++){
+			//				for(var j=0;j<num.length-1-i;j++){
+			//						document.write("b"+"&nbsp;"+j+"<br />");
+			//						document.write("b+1"+"&nbsp;"+num[(j+1)]+"<br />");
+			//						document.write("at[b]"+"&nbsp;"+num[j]+"<br />");
+			//						document.write("at[b]"+"&nbsp;"+num[(j+1)]+"<br /><br />");
+			//					if(num[j]>num[j+1]){
+			//						temp=num[j];
+			//						num[j]=num[j+1];
+			//						num[j+1]=temp;
+			//						
+			//					}
+			//				}
+			//			}
+			//			for(var index in num){
+			//				document.write(num[index]);
+			//			}
+			//			
+			//			var sum=0;
+			//			var at=[9,4,2,5,1];
+			//			for(var a=0;a<at.length-1;a++){
+			//				for(var b=0;b<at.length-1-a;b++){
+			////						document.write("b"+"&nbsp;"+b+"<br />");
+			////						document.write("b+1"+"&nbsp;"+(b+1)+"<br />");
+			////						document.write("at[b]"+"&nbsp;"+at[b]+"<br />");
+			////						document.write("at[b+1]"+"&nbsp;"+at[(b+1)]+"<br /><br />");
+			//					if(at[b]>at[b+1]){
+			//						sum=at[b];
+			//						
+			//						at[b]=at[b+1];
+			//						at[b+1]=sum;
+			//					}
+			//				}
+			//			}
+			//			for(var index2 in at){
+			//				document.write(at[index2]);
+			//}
+//						题目：判断101-200之间有多少个素数，并输出所有素数。 
+//						程序分析：判断素数的方法：用一个数分别去除2到sqrt(这个数)，如果能被整除， 则表明此数不是素数，反之是素数。 
+//							document.write("<br/>")
+//							for(var index3=101;index3<=200;index3++){
+//								if(index3%2!=0){
+//									document.write(index3+"&nbsp");
+//								}
+//							}
+//						【程序3】   
+//							题目：打印出所有的 "水仙花数 "，所谓 "水仙花数 "是指一个三位数，其各位数字立方和等于该数本身。例如：153是一个 "水仙花数 "，因为153=1的三次方＋5的三次方＋3的三次方。
+//								document.write("<br/>")
+//								for(var a=1;a<=9;a++){
+//									for(var b=0;b<=9;b++){
+//										for(var c=0;c<=9;c++){
+//											var int=a*100+b*10+c;
+//											if(int==a*a*a+b*b*b+c*c*c){
+//												document.write(int+"<br />");
+//											}
+//										}
+//									}
+//								}
+//			var t = 0;
+//			for(var index = 100; index <= 999; index++) {
+//				var t = index;
+//				var x = t / 100 - t % 100 * 0.01;
+//				var y = t % 100 / 10 - t % 10 * 0.1;
+//				var z = t % 10;
+//				if(t == x * x * x + y * y * y + z * z * z) {
+//
+//					document.write("<br />" + t);
+//				}
+//			}
+//			//
+//			//			【程序17】   
+//			//				题目：猴子吃桃问题：猴子第一天摘下若干个桃子，当即吃了一半，还不瘾，又多吃了一个     
+//			//					第二天早上又将剩下的桃子吃掉一半，又多吃了一个。以后每天早上都吃了前一天剩下     的一半零一个。
+//			//					到第10天早上想再吃时，见只剩下一个桃子了。求第一天共摘了多少。
+//			var i = 1;
+//			for(var index = 9; index >= 1; index--) {
+//				i = (i + 1) * 2;
+//			}
+//			document.write("<br>" + i);
+			//			【程序19】   
+			//				题目：打印出如下图案（菱形）   
+			//						     *   
+			//						   ***   
+			//						 *****   
+			//						*******   
+			//						 *****   
+			//						   ***   
+			//							*
+			var sum = "*";
+			for(var index = 1; index <= 4; index++) {
+				if(index == 1) {
+					document.write("<br/>"+ sum);
+				} else if(index + 1 > index) {
+					sum += "*" + "*";
+					document.write("<br/>" + sum+"<br />");
+				}
+			}
+
+			//				var nu="*";
+			//				for(var index1=3;index1<=3;index1--){
+			//					if(index1==3){
+			//						document.write("<br/>"+nu);
+			//					}
+			//					else if(index1+1<index1){
+			//						nu+="*"+"*";
+			//						document.write("<br/>"+nu);
+			//					}
+			//				}
+//							for(var i=1;i<5;i++){
+//								for(int j=1;j<=i;j++){
+//									document.write("*");
+//								}
+//								document.write("<br/>");
+//							}
+			
+			var sum = "*";
+			
+			for(var i=0;i<4;i++){
+				for (var j=4;j>=i;j--) {
+					document.write("&ensp;");
+				}
+				for (var h=0;h<2*i+1;h++) {
+					document.write(sum);
+				}
+				document.write("<br />");
+			}
+			for(var i=3;i>0;i--){
+				for (var j=4;j>=i;j--) {
+					document.write("&ensp;");
+				}
+				for (var h=0;h<2*i-1;h++) {
+					document.write(sum);
+				}
+				document.write("<br />");
+			}
+
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+
+</html>

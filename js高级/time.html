@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>时间开始与暂停</title>
+		<script>
+			
+			
+			//document.write(sum);
+//			sum.onclick=
+			function show(){
+				
+				var d=new Date();
+				var y=d.getFullYear();
+				var month=d.getMonth()+1;
+				var r=d.getDate();
+				var h=d.getHours();
+				var m=d.getMinutes();
+				var s=d.getSeconds();
+				
+				var sum=y+"年"+month+"月"+r+"日&nbsp;&nbsp;"+h+"时"+m+"分"+s+"秒";
+				var  di=document.getElementById("time");
+				di.innerHTML=sum;
+			}
+			var t;
+			function a(){
+				t=setInterval("show()",1000);}
+			function b(){
+				clearInterval(t);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="time"> </div>
+		<input type="button" value="开始" onclick="a()"/>
+		<input type="button" value="结束" onclick="b()"/>
+	</body>
+</html>
